@@ -1,0 +1,11 @@
+{% include header.html %}
+
+<h2 class="page-title"><span class="page-title--value">Category:</span> {{ page.title }}</h2>
+
+{% for post in site.categories[page.category] %}
+
+    {% include entry.html %}
+
+{% endfor %}
+
+{% include footer.html %}

@@ -1,0 +1,11 @@
+{% include header.html %}
+
+    {{ content }}
+
+{% for post in site.posts %}
+
+    {% include entry.html %}
+
+{% endfor %}
+
+{% include footer.html %}

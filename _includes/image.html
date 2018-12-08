@@ -1,0 +1,22 @@
+<figure>
+<img src="{{ site.url }}/images/photos/{{ include.name }}-1280w.jpg" 
+     srcset="{{ site.url }}/images/photos/{{ include.name }}-425w.jpg 425w, 
+     {{ site.url }}/images/photos/{{ include.name }}-850w.jpg 850w, 
+     {{ site.url }}/images/photos/{{ include.name }}-1024w.jpg 1024w, 
+     {{ site.url }}/images/photos/{{ include.name }}-1280w.jpg 1280w,
+     {{ site.url }}/images/photos/{{ include.name }}-2000w.jpg 2000w"
+     {% if include.image-layout == "50x2" || include.image-layout == "50x1" %}
+        sizes="(min-width: 450px) 630px, 91vw"
+     {% elsif include.image-layout == "33x3" %}
+        sizes="(min-width: 450px) 413px, 91vw"
+    {% elsif include.image-layout == "25x4" %}
+        sizes="(min-width: 450px) 305px, 91vw"
+     {% else %}     
+        sizes="(min-width: 450px) 1280px, 91vw"
+     {% endif %}
+     class="entry__image {% if include.image-layout == "50x1" %} entry__image--half{% endif %}" alt="{{ include.alt }}" />
+
+{% if include.caption %}
+<figcaption class="entry__image-caption">{{ include.caption }}</figcaption>
+{% endif %}
+</figure>
