@@ -39,7 +39,6 @@ Thumbs.db
 /_site
 
 /node_modules/*
-!/node_modules/bootstrapBeta/
-
+/.sass_cache
 
 /css
