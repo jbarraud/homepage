@@ -1,10 +1,10 @@
 <figure>
-<img src="{{ base.url }}/images/photos/{{ include.name }}-1280w.jpg" 
-     srcset="{{ base.url }}/images/photos/{{ include.name }}-425w.jpg 425w, 
-     {{ base.url }}/images/photos/{{ include.name }}-850w.jpg 850w, 
-     {{ base.url }}/images/photos/{{ include.name }}-1024w.jpg 1024w, 
-     {{ base.url }}/images/photos/{{ include.name }}-1280w.jpg 1280w,
-     {{ base.url }}/images/photos/{{ include.name }}-2000w.jpg 2000w"
+<img src="{{ site.url }}/images/photos/{{ include.name }}-1280w.jpg" 
+     srcset="{{ site.url }}/images/photos/{{ include.name }}-425w.jpg 425w, 
+     {{ site.url }}/images/photos/{{ include.name }}-850w.jpg 850w, 
+     {{ site.url }}/images/photos/{{ include.name }}-1024w.jpg 1024w, 
+     {{ site.url }}/images/photos/{{ include.name }}-1280w.jpg 1280w,
+     {{ site.url }}/images/photos/{{ include.name }}-2000w.jpg 2000w"
      {% if include.image-layout == "50x2" || include.image-layout == "50x1" %}
         sizes="(min-width: 450px) 630px, 91vw"
      {% elsif include.image-layout == "33x3" %}
