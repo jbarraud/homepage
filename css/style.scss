@@ -138,13 +138,13 @@ a:link,a:visited{
   margin-top: 10px;
   margin-left: 29px;
   font-size: 48px;
+  font-weight: 400;
   @include breakpoint(bp-phone){
     font-size: 22px;
-    margin-left: 0;
+    margin-left: 8px;
   }    
 }
 .page-title--value{
-  font-weight: 400;
 }
 .main-content{
   max-width: 1280px;
